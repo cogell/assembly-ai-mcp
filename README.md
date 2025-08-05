@@ -48,6 +48,26 @@ ASSEMBLYAI_API_KEY=your-api-key-here
 
 ### Running the Server
 
+You can run the AssemblyAI MCP server in several ways:
+
+#### Direct execution with npx/pnpm dlx (recommended)
+
+```bash
+# Using npx
+npx assembly-ai-mcp@latest
+
+# Using pnpm dlx
+pnpm dlx assembly-ai-mcp@latest
+```
+
+#### Adding to Claude Code
+
+```bash
+claude mcp add assembly-ai-mcp --scope user -- pnpm dlx assembly-ai-mcp@latest
+```
+
+#### Local development
+
 Start the MCP server:
 
 ```bash
